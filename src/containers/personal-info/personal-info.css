@@ -1,0 +1,15 @@
+.personal__info{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.shared{
+    display: flex;
+    justify-content: space-between;
+}
+.lg{
+    flex-basis: 55%;
+}
+.dm{
+    flex-basis: 40%;
+}

@@ -1,0 +1,43 @@
+.card__input {
+  background-color: white;
+  height: 28px;
+  border: solid #ded8cc 1px;
+  outline: none;
+  border-radius: 7px;
+  margin-bottom: 25px;
+}
+
+input[type="cvv"] {
+  width: 70px;
+  box-sizing: border-box;
+  height: 36px;
+  border: solid #a5a29d 1px;
+  outline: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 2px;
+  text-align: center;
+}
+input[type="expiry"] {
+  width: 80px;
+  box-sizing: border-box;
+  height: 36px;
+  border: solid #a5a29d 1px;
+  outline: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 2px;
+  text-align: center;
+}
+input[type="card-detail"] {
+  width: 100%;
+  box-sizing: border-box;
+  height: 36px;
+  border: solid #a5a29d 1px;
+  outline: none;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 9px;
+  margin-bottom: 25px;
+
+}

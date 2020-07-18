@@ -1,0 +1,49 @@
+.app {
+  position: relative;
+  height: 100vh;
+}
+
+.app__slant {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  background-image: linear-gradient(#fcf1DB, #fcf1DB);
+  transform: skewY(-18deg);
+  transform-origin: top left;
+}
+.app__container{
+  border: solid transparent 1px;
+  height: auto;
+  color: black;
+  position: relative;
+ 
+}
+.app__main{
+  width: 80%;
+  margin: 70px auto;
+  max-width: 550px;
+}
+
+@media screen and (min-width:500px){
+  .app__main{
+    width: 60%;
+    margin: 100px auto;
+  }
+  .app__slant{
+    transform: skewY(-8deg);
+  }
+}
+@media screen and (min-width:768px){
+  .app__main{
+    width: 50%;
+    max-width: 450px;
+  }
+  .app__slant{
+    transform: skewY(-8deg);
+  }
+}
+
