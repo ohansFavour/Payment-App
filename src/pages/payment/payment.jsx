@@ -19,6 +19,13 @@ const Payment = (props) => {
     setSelected(selected + 1);
   };
 
+  //cancel payment
+
+  const cancelPayment = (event) => {
+    event.preventDefault();
+    setSelected(1);
+  };
+
   //main output
   return (
     <div className="payment">
@@ -50,7 +57,7 @@ const Payment = (props) => {
 
         <div className="horizontal__rule"></div>
 
-      {/* content details */}
+        {/* content details */}
       </section>
       <div className="payment__main">
         {selected === 1 && <PersonalInfo />}
@@ -61,7 +68,7 @@ const Payment = (props) => {
         <button className="footer__button" onClick={(e) => buttonAction(e)}>
           {selected !== 3 ? "Next" : "Pay"}
         </button>
-        <p>Cancel Payment</p>
+        <p onClick={(e) => cancelPayment(e)}>Cancel Payment</p>
       </div>
     </div>
   );
