@@ -25,7 +25,7 @@ const ConfirmPayment = () => {
 
   //main output
   return (
-    <div className="confirm-payment">
+    <div className="confirm-payment" data-test="confirm-test">
       <section>
         <div className="header__content">
           <span>Item Name</span>

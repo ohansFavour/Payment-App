@@ -8,7 +8,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="app">
+    <div className="app" data-test="app-test">
       <div className="app__slant"></div>
       <div className="app__container">
         <div className="app__main">

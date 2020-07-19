@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
+
 import "./dropdown.css";
 
 const Dropdown = ({ label, list, placeholder, required }) => {
@@ -16,7 +18,7 @@ const Dropdown = ({ label, list, placeholder, required }) => {
   };
 
   return (
-    <div className="dropdown">
+    <div className="dropdown" data-test="dropdown-test">
       <label className={required ? "required" : ""}>{label}</label>
       <div className="dropdown__button" onClick={toggleDropdownMenu}>
         {" "}
@@ -35,6 +37,12 @@ const Dropdown = ({ label, list, placeholder, required }) => {
       ) : null}
     </div>
   );
+};
+Dropdown.propTypes = {
+  label: PropTypes.string,
+  list: PropTypes.array,
+  placeholder: PropTypes.string,
+  required: PropTypes.any,
 };
 
 export default Dropdown;

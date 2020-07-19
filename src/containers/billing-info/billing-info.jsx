@@ -18,7 +18,7 @@ const BillingInfo = () => {
 
   //main output
   return (
-    <div>
+    <div data-test="billing-test">
       <FormInput
         label="Name of Card"
         required

@@ -15,7 +15,7 @@ const PersonalInfo = () => {
 
   // main output
   return (
-    <form className="personal__info">
+    <form className="personal__info" >
       <FormInput label="Name" placeholder="Opara Linus Ahmed" />
       <FormInput
         label="Email Address"
@@ -28,7 +28,7 @@ const PersonalInfo = () => {
         placeholder="The address of the user goes here"
       />
       <FormInput label="Address 2" placeholder="and here" />
-      <div className="shared">
+      <div className="shared" data-test="personal-info-test">
         <div className="lg">
           <FormInput label="Local Government" placeholder="Surulere" />
         </div>

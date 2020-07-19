@@ -1,21 +1,20 @@
 import React from "react";
-import DropDown from "./dropdown";
+import FormInput from "./form-input";
 import { shallow } from "enzyme";
 import { findByTestAtrr, checkProps } from "../../utils";
 
-describe("DropDown Component", () => {
+describe("Form Input Component", () => {
   describe("check prop types", () => {
     it("should have the right props", () => {
       const expectedProps = {
-        buttonText: "button text test",
-        emitEvent: () => {},
-        label: "test label",
-        list: [],
         placeholder: "test placeholder",
-        required: false,
+        label: "test label",
+        required: true,
+        info: "test string",
+        background: false,
       };
 
-      const propsError = checkProps(DropDown, expectedProps);
+      const propsError = checkProps(FormInput, expectedProps);
       expect(propsError).toBeUndefined();
     });
   });
@@ -23,10 +22,10 @@ describe("DropDown Component", () => {
   describe("renders properly", () => {
     let component;
     beforeEach(() => {
-      component = shallow(<DropDown />);
+      component = shallow(<FormInput />);
     });
-    it("renders the dropDown", () => {
-      const wrapper = findByTestAtrr(component, "dropdown-test");
+    it("renders the formInput", () => {
+      const wrapper = findByTestAtrr(component, "form-input-test");
       expect(wrapper.length).toBe(1);
     });
   });
