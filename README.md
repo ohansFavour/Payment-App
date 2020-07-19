@@ -13,9 +13,9 @@ Demo:<a href="https://master.dkwqoa2u34153.amplifyapp.com/">https://master.dkwqo
 </ul>
 
 <h3 >Images</h3>
-<img src="./src/assets/personal-info.PNG" alt="payment-info" width="150px" height="auto"/>
-<img src="./src/assets/billing-info.PNG" alt="payment-info" width="150px" height="auto"/>
-<img src="./src/assets/complete-payment.PNG"alt="payment-info"width="150px" height="auto" />
-<img src="./src/assets/success.PNG" alt="payment-info" width="150px" height="auto" />
+<img src="./src/assets/personal-info.PNG" alt="payment-info" width="300px" height="auto"/>
+<img src="./src/assets/billing-info.PNG" alt="payment-info" width="300px" height="auto"/>
+<img src="./src/assets/complete-payment.PNG"alt="payment-info"width="300px" height="auto" />
+<img src="./src/assets/success.PNG" alt="payment-info" width="300px" height="auto" />
 
 This App is hosted on AWS (<a href="https://master.dkwqoa2u34153.amplifyapp.com/">https://master.dkwqoa2u34153.amplifyapp.com/</a>)
