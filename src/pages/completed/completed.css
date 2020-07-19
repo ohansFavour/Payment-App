@@ -1,58 +1,74 @@
 .completed__container {
+  width: 270px;
+  height: 190px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 35px 6px;
-  margin-top: 40vh;
-  -webkit-box-shadow: 1.6px 1.6px 1.6px 1.6px rgb(250, 250, 250);
-  -moz-box-shadow: 1.6px 1.6px 1.6px 1.6pxrgb(250, 250, 250);
-  box-shadow: 1.6px 1.6px 1.6px 1.6px rgb(250, 250, 250);
-  max-width: 400px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   background-color: white;
-  border-radius: 5px;
+  border-radius: 6px;
+  margin-top: 30vh;
 }
 .iconify {
-  font-size: 25px;
+  font-size: 28px;
   padding: 3px;
   background-color: white;
   border-radius: 50%;
-  margin: 0 auto;
-  position: relative;
-  top: 17px;
-  -webkit-box-shadow: 1.6px 1.6px 1.6px 1.6px rgb(250, 250, 250);
-  -moz-box-shadow: 1.6px 1.6px 1.6px 1.6px rgb(250, 250, 250);
-  box-shadow: 1.6px 1.6px 1.6px 1.6px rgb(250, 250, 250);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .completed__content {
-  width: 100%;
-}
-.completed__mark {
+  width: 77%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+.completed__content > h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 0px;
+  text-align: center;
 }
 .completed__main {
   width: 85%;
-  margin: 0 auto;
 }
 .purchase__details {
-  font-size: 0.8em;
+  font-size: 11px;
+  margin-bottom: 12px;
 }
 .purchase {
-  font-size: 1.3em;
-  color: blue;
+  font-size: 19px;
+  color: #4e598c;
+  font-weight: bold;
+  margin-bottom: 12px;
 }
-.completed__main a {
-  color: #f29a4e;
-  font-size: 0.8em;
-}
-.link__container {
-  margin-bottom: 10px;
+.link__container a {
+  color: #f6c785;
+  font-size: 11px;
 }
 
-@media screen and (min-width:768px){
-    .completed__main {
-        width: 60%;
-        margin: 0 auto;
-      }
+@media screen and (min-width: 768px) {
+  .completed__container {
+    width: 370px;
+    height: 190px;
+  }
+  .purchase {
+    font-size: 27px;
+    color: #4e598c;
+  }
+
+  .purchase__details {
+    font-size: 14px;
+  }
+  .link__container a {
+    color: #f29a4e;
+    font-size: 14px;
+  }
 }

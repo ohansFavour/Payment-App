@@ -1,7 +1,7 @@
 .payment header {
   font-size: 1em;
   margin-bottom: 30px;
-  color: #7c80a0;
+  color: #636b95;
   font-weight: bold;
 }
 .tab {
@@ -17,7 +17,7 @@
 .tab__container > div {
   flex-basis: 33.3%;
   font-size: 0.6em;
-  color: #ded8cc;
+  color: #cac8c3;
   padding-bottom: 9px;
   cursor: pointer;
 }
@@ -28,8 +28,8 @@
 }
 
 .highlight {
-  border: solid 3.6px #f29a4e;
-  background-color:#f29a4e;
+  border: solid 3.6px #f2994a;
+  background-color:#f2994a;
   border-radius: 10px;
   width: 70%;
   position: relative;
@@ -40,7 +40,7 @@
   display: none;
 }
 #selected {
-  color: #f29a4e;
+  color: #f2994a;
 }
 .payment__main {
   width: 100%;
@@ -52,7 +52,7 @@
 
 .footer__button {
   height: 32px;
-  background-color: #f2aa4d;
+  background-color: #f2bb4b;
   border: none;
   border-radius: 7px;
   width: 120px;
@@ -61,7 +61,7 @@
   outline: none;
 }
 .footer > p {
-  color: #7c80a0;
+  color: #6d76a0;
   font-size: 0.7em;
   margin-left: 20px;
   cursor: pointer;
