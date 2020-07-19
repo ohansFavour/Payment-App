@@ -1,5 +1,5 @@
 #form__container {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   input[type="text"] {

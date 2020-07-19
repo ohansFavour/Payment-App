@@ -9,11 +9,14 @@ import Cvv from "../../components/credit-card/cvv";
 import "./billing-info.css";
 
 const BillingInfo = () => {
+  //card types data
   const dropDownList = [
     { key: 1, value: "Visa" },
     { key: 2, value: "Master Card" },
     { key: 3, value: "Prepaid" },
   ];
+
+  //main output
   return (
     <div>
       <FormInput
@@ -38,7 +41,6 @@ const BillingInfo = () => {
           </div>
         </div>
       </div>
-
       <div className="billing__details large">
         <div className="billing__details__number">
           <CardDetails />

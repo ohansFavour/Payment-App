@@ -11,7 +11,7 @@ const ExpiryDate = () => {
   }
 
   return (
-    <div >
+    <div>
       <label className="required">Expiry Date</label>
       <Cleave
         placeholder="04 / 23"

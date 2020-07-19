@@ -4,12 +4,14 @@ import Cleave from "cleave.js/react";
 import "./credit-card.css";
 
 const CardDetails = () => {
+  //value of input
   const [customValue, setCustomValue] = useState("");
 
   function onCustomValueChange(e) {
     setCustomValue(e.target.rawValue);
   }
 
+  //main output
   return (
     <div>
       <label className="required">Card Details</label>
@@ -18,12 +20,11 @@ const CardDetails = () => {
         options={{
           blocks: [5, 5, 5, 5],
           delimiter: " ",
-          numericOnly: true
-          
+          numericOnly: true,
         }}
         onChange={onCustomValueChange}
         className="form-field card__input"
-        type= "card-detail"
+        type="card-detail"
       />
     </div>
   );

@@ -7,12 +7,14 @@ const Completed = () => {
   return (
     <div className="completed__container">
       <div className="completed__content">
-      <h1><span
-          className="iconify"
-          data-icon="flat-color-icons:checkmark"
-          data-inline="false"
-          align="center"
-        ></span></h1>
+        <h1>
+          <span
+            className="iconify"
+            data-icon="flat-color-icons:checkmark"
+            data-inline="false"
+            align="center"
+          ></span>
+        </h1>
         <span className="purchase">Purchase Completed</span>
         <span className="purchase__details">
           Please check your email for details concerning this transaction
@@ -21,7 +23,8 @@ const Completed = () => {
           <Link to="/">Return Home</Link>
         </div>
       </div>
-    </div>)
+    </div>
+  );
 };
 
 export default Completed;

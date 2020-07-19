@@ -6,8 +6,11 @@ import BillingInfo from "../../containers/billing-info/billing-info";
 import ConfirmPayment from "../../containers/confirm-payment/confirm-payment";
 
 import "./payment.css";
+
 const Payment = (props) => {
   const [selected, setSelected] = useState(1);
+
+  // handle button press
   const buttonAction = (event) => {
     event.preventDefault();
     if (selected === 3) {
@@ -15,6 +18,8 @@ const Payment = (props) => {
     }
     setSelected(selected + 1);
   };
+
+  //main output
   return (
     <div className="payment">
       <header>Complete your Purchase</header>
@@ -42,7 +47,10 @@ const Payment = (props) => {
             <div className={selected === 3 ? "highlight" : ""}></div>
           </div>
         </div>
+
         <div className="horizontal__rule"></div>
+
+      {/* content details */}
       </section>
       <div className="payment__main">
         {selected === 1 && <PersonalInfo />}

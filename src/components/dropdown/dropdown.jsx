@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./dropdown.css";
 
-const Dropdown = ({ label, list, placeholder,required }) => {
+const Dropdown = ({ label, list, placeholder, required }) => {
   const [displayMenu, setDisplayMenu] = useState(false);
   const [selected, setSelected] = useState(placeholder);
 
@@ -17,7 +17,7 @@ const Dropdown = ({ label, list, placeholder,required }) => {
 
   return (
     <div className="dropdown">
-      <label className={required ? "required":""}>{label}</label>
+      <label className={required ? "required" : ""}>{label}</label>
       <div className="dropdown__button" onClick={toggleDropdownMenu}>
         {" "}
         <span>{selected}</span>

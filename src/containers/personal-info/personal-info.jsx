@@ -6,11 +6,14 @@ import DropDown from "../../components/dropdown/dropdown";
 import "./personal-info.css";
 
 const PersonalInfo = () => {
+  //select option data
   const dropDownList = [
     { key: 1, value: "Lagos" },
     { key: 2, value: "Oyo" },
     { key: 3, value: "Abuja" },
   ];
+
+  // main output
   return (
     <form className="personal__info">
       <FormInput label="Name" placeholder="Opara Linus Ahmed" />

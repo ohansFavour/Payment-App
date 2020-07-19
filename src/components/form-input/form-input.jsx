@@ -7,16 +7,14 @@ const FormInput = (props) => {
   return (
     <div id="form__container">
       <label
-        className={label ? "label" : "none"}
-        className={required ? "required" : ""}
+        className={`${label ? "label" : "none"} ${required ? "required" : ""}`}
       >
         {label}
       </label>
       <p className={info ? "muted" : "none"}>{info}</p>
       <div className="input__container">
         <input
-          className="form__input "
-          className={background ? "background" : ""}
+          className={`${background ? "background" : ""} "form__input "`}
           placeholder={placeholder}
           type="text"
         />

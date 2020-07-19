@@ -2,20 +2,28 @@ import React from "react";
 
 import "./confirm-payment.css";
 
-const itemsList = [
-  { key: 1, name: "Data science and usability", price: 50000 },
-  { key: 2, name: "Shipping", price: 0 },
-];
-const numberWithCommas = (x) => {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-};
-
-const sumPrice = (list) => {
-  return numberWithCommas(list.reduce((acc, item) => {
-    return acc + item.price;
-  }, 0));
-};
 const ConfirmPayment = () => {
+  // confirm payment data
+  const itemsList = [
+    { key: 1, name: "Data science and usability", price: 50000 },
+    { key: 2, name: "Shipping", price: 0 },
+  ];
+
+  // convert number to comma separated values
+  const numberWithCommas = (x) => {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  };
+
+  //Add cost of all items
+  const sumPrice = (list) => {
+    return numberWithCommas(
+      list.reduce((acc, item) => {
+        return acc + item.price;
+      }, 0)
+    );
+  };
+
+  //main output
   return (
     <div className="confirm-payment">
       <section>

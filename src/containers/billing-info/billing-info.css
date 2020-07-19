@@ -16,19 +16,19 @@
   .normal {
     display: none;
   }
-  .large{
-      display: flex;
+  .large {
+    display: flex;
   }
   .billing__details {
     flex-direction: row;
-    justify-content: space-between;  
+    justify-content: space-between;
     margin: 0;
-    padding: 0;  
+    padding: 0;
   }
-  .billing__details__number{
-   flex-basis: 55%;
+  .billing__details__number {
+    flex-basis: 55%;
   }
-  .billing__details__expiry{
+  .billing__details__expiry {
     display: flex;
   }
 }
